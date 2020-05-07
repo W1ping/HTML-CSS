@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo5</title>
+		<style type = "text/css">
+			/*为页面中的所有 p 元素设置一个字体颜色*/
+			/*
+			 * 元素选择器
+			 * 	作用:通过元素选择器可以宣导页面中的所有指定元素
+			 * 	语法: 标签名 { }
+			 */
+		/*	p{
+				color: red;
+			}
+			
+			h1{
+				color: blue;
+			}*/
+			
+			/*
+			 * 	id 选择器
+			 *  - 通过元素的id属性值选中为一个的一个元素
+			 * 	- 语法:
+			 * 		#id属性值{}
+			 */
+			#p0{
+				font-size: 20px;
+				color: yellow;
+			}
+			/*
+			 * 类选择器/class选择器
+			 * 	- 通过元素的class属性值选中一组元素
+			 * 	- 语法:
+			 * 			.class属性值{}
+			 * 	- 可以同时为一个元素设置多个class属性值,多个值之间使用空格隔开
+			 */
+			.p1{
+				font-size: 20px;
+				color: blue;
+			}
+			
+			/*
+			 * 选择器分组/并集选择器
+			 *  - 通过选择器分组可以同时选中多个选择器对应的元素
+			 *  - 语法 :选择器1, 选择器2, ....,选择器n { }
+			 * 为id为 p3 class为p2的元素  还有 h1同时设置背景颜色
+			 */
+			#p3, .p2 ,h1{
+				background-color: red;
+				font-size: 20px;
+			}
+			
+			/*
+			 * 复合选择器/交集选择器
+			 * 	- 作用: 可以选中同时满足多个选择器的元素
+			 * 	- 语法:
+			 * 			- 选择器1选择器2选择器n{ }    紧挨在一起不需要空格
+			 * 拥有class = p4 span  元素设置颜色
+			 */
+			span.p4{
+				background-color: yellowgreen;
+			}
+			/*
+			 * 通配选择器
+			 * 选中页面中所有元素
+			 *	- 语法:
+			 * 			* { }
+			 *        *{
+							color: violet;
+						}		
+			 */
+		
+		</style>
+	</head>
+	<body>
+		<h1>-h1 标签</h1>
+		
+		<p id = "p0">-id=p0  p标签</p>
+		<!--
+			可以为元素设置class属性
+				class 属性和 id 属性类似,只不过class属性可以重复
+				拥有相同class属性值的元素,他们是一组元素
+		-->
+		<p class = "p1 hello">-class=p1 hellp  p标签</p><!--表示这个p标签拥有 p1 和 hello两个class值-->
+		
+		<p class = "p1">-class=p1 p标签</p>
+		<p class = "p1">-class=p1 p标签</p>
+		
+		<p class = "p2">-class=p2 p标签</p>
+		<p class = "p2">-class=p2 p标签</p>
+		
+		<p id = "p3">-id=p3 p标签</p>
+		
+		<p class = "p4">-class=p4 p标签</p>
+		<span class = "p4">-class=p4 span标签</span>
+	</body>
+</html>

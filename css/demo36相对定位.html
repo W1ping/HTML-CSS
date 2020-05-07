@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo36相对定位</title>
+		<style type = "text/css">
+		/*
+		 * position 属性规定元素的定位类型。
+		 * 	任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。
+		 *  相对定位元素会相对于它在正常流中的默认位置偏移。
+		 *	可选值:
+		 * 	static 		默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 的声明)
+		 * 	relative 	生成相对 定位的元素，相对于其正常位置进行定位。
+		 *	fixed 		生成 绝对/固定 定位的元素，相对于浏览器窗口进行定位
+ 		 *	absolute 	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+ 		 * 
+ 		 *  当开启了元素的定位(position属性值是一个非 static )时
+ 		 * 可以通过 left right top bottom 四个属性来设置元素的偏移量
+ 		 *  left : 		元素相对于其他定位的  左侧 的偏移量
+ 		 *  right : 	元素相对于其他定位的  右侧 的偏移量
+ 		 *  top : 		元素相对于其他定位的  上边 的偏移量
+ 		 *  bottom : 	元素相对于其他定位的  下边 的偏移量
+ 		 * 
+ 		 * 通常偏移量只需要使用两个就可以对一个元素进行定位
+ 		 *  一般选择一个水平和一个垂直方向的偏移量来进行定位
+		 */
+		
+		/*
+		 * 当元素的 position 属性设置为 relative 时,则开启了元素的相对定位
+		 * 1.当开启了元素的相对定位后,而不设置偏移量时,元素不会发生任何变化
+		 * 2.相对定位是相对于元素在 文档流 中原来的位置进行定位
+		 * 3.相对定位的元素不会脱离文档流
+		 * 4.相对定位会是元素提升一个层级(能覆盖其他元素)
+		 * 5.相对定位不会改变元素的性质,块还是块,内联还是内联(无法设置宽高)
+		 */
+			.box1{
+				width:200px;
+				height:200px;
+				background-color: #bfa;
+			}
+			.box2{
+				width:200px;
+				height:200px;
+				background-color: red;
+				
+				position: relative;
+				left:200px;
+				top:200px;
+			}
+			.box3{
+				width:200px;
+				height:200px;
+				background-color:blue ;
+			}
+			
+			/*内联元素无法设置宽高,定位也不会改变元素的性质*/
+			span{
+				width:200px;
+				height:200px;
+				background-color: yellow;
+				
+				position: relative;
+				left:200px;
+				top:200
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<span>span标签</span>
+	</body>
+</html>

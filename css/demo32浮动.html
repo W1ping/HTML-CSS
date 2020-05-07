@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo32</title>
+		<style type="text/css">
+		/*
+		 * 块元素在文档流中默认垂直排列
+		 * 
+		 * 	float : 脱离文档流可以使块元素在页面中水平排列
+		 * 		left 元素向左浮动。 
+				right 元素向右浮动。 
+				none 默认值。元素不浮动，并会显示在其在文本中出现的位置。 
+			会向左上或右上浮动,遇到父元素边框则停止浮动
+			如果浮动元素上边是一个没有浮动的块元素,则浮动不会超过此块元素
+		 */
+			.box1{
+				width:200px;
+				height:200px;
+				background-color:red;
+				/*display: inline-block;*/
+				float:right;
+			}
+			
+			/*.box2{
+				width:200px;
+				height:200px;
+				background-color:yellow ;
+				/*display: inline-block;
+			}
+			
+			.box3{
+				width:200px;
+				height:200px;
+				background-color:#bfa;
+				/*display: inline-block;
+			}*/
+			
+			
+			/*
+			 * 浮动的元素不会盖住文字,文字会自动环绕仔浮动元素的周围
+			 * 可以通过文字环绕图片的效果
+			 */
+			.p1{
+				
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<!--
+			<div class="box2"></div>
+			<div class="box3"></div>
+		-->
+		<p class="p1">
+			啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如啊鬼炒如炒如炒如炒如
+		</p>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo23</title>
+		<style type= "text/css">
+			/*text-transform 	属性控制文本的大小写
+				:none 默认。		定义带有小写字母和大写字母的标准的文本。 
+				:capitalize 	文本中的每个单词首字母大写。 通过  空格/单词的边界  来识别单词
+				:uppercase 		定义仅有大写字母。 
+				:lowercase 		定义无大写字母，仅有小写字母。 
+				:inherit 		规定应该从父元素继承 text-transform 属性的值。 
+				
+			text-decoration 	属性规定添加到文本的修饰。
+				:none 默认。		定义标准的文本。 /去除下划线
+				:underline 		定义文本下的一条线。 
+				:overline 		定义文本上的一条线。 
+				:line-through 	定义穿过文本下的一条线。 中间
+				:blink 			定义闪烁的文本。 
+				:inherit 		规定应该从父元素继承 text-decoration 属性的值。 
+			超链接会默认添加下横线
+			*/
+			.p1{
+				text-transform: capitalize;
+			}
+		 	
+		 	.p2{
+		 		text-decoration: blink ;
+		 	}
+		 	
+		 	/*
+		 	 * 超链接会默认添加下横线
+		 	 * 使用 none 值去除下划线
+		 	 */
+		 	a{
+		 		text-decoration: none;
+		 	}
+		 	
+		 	/*
+		 	 * letter-spacing 属性增加或减少字符间的空白（字符间距）。
+		 	 		normal 		默认。规定字符间没有额外的空间。 
+					length 		定义字符间的固定空间（允许使用负值）。 
+					inherit 	规定应该从父元素继承 letter-spacing 属性的值。 
+					
+					
+				word-spacing 属性增加或减少单词间的空白（即字间隔）。
+					normal 		默认。定义单词间的标准空间。 
+					length 		定义单词间的固定空间。 
+					inherit 	规定应该从父元素继承 word-spacing 属性的值。 
+				
+		 	 * 
+		 	 */
+		 	.p3{
+		 	/*	letter-spacing: 30px;*/
+		 	word-spacing: 30px;
+		 	}
+		 	
+		 	/*
+		 	 * text-align 属性规定元素中的文本的水平对齐方式。
+				left 		把文本排列到左边。默认值：由浏览器决定。 
+				right 		把文本排列到右边。 
+				center 		把文本排列到中间。 
+				justify 	实现两端对齐文本效果。通过调整文本之间的大小来达到效果 
+				inherit 	规定应该从父元素继承 text-align 属性的值 
+		 	 */
+		 	.p4{
+		 		text-align: center ;
+		 	}
+		 	
+		 	/*
+		 	 * text-indent 属性规定文本块中首行文本的缩进。/只对第一行有效果
+		 	 * 如果使用负值，那么首行会被缩进到左边。可以使用将文字隐藏起来
+		 	 * 	用户看不见但是搜索引擎可以查到
+
+			length 	定义固定的缩进。默认值：0。 
+			em 		定义基于父元素宽度的百分比的缩进。 
+		 	 */
+		 	.p5{
+		 		text-indent:-50px ;
+		 	}
+		</style>
+	</head>
+	<body>
+		
+		<p class="p1">There are two kinds of views on the issue. On one side, 
+			some people believe that young people 
+			have no obligation to abandon their seats,
+		</p>
+		<br /><br />
+		<p class="p2">There  are  two kinds of views on the issue. On one side, 
+			some people believe that young people 
+			have no obligation to abandon their seats,
+		</p>
+		
+		<a href="#">啊鬼炒如</a>
+		<br /><br />
+		<p class="p3">
+			There  are  two  kinds  of views on the issue. On one side, 
+			some  people   believe  that  young people There are two kinds of views on the issue. On one side, 
+			some people  believe that  young people 
+			have no obligation to abandon their seats,
+			炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如
+		</p>
+		<h1 class="p4">h1 标签</h1>	
+		<p class="p4">
+			There  are  two  kinds  of views on the issue. On one side, 
+			some  people   believe  that  young people There are two kinds of views on the issue. On one side, 
+			some people  believe that  young people 
+			have no obligation to abandon their seats,
+			炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如
+		</p>
+		
+		<p class="p5">
+			炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊鬼炒如炒如炒如炒如炒如炒如炒如炒如
+			啊鬼炒如炒如炒如炒如炒如炒如炒如炒如啊
+		</p>
+	</body>
+</html>

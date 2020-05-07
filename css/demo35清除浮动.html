@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo35</title>
+		<style type="text/css">
+		
+			.box1{
+				width:100px;
+				height:100px;
+				background-color: #bfa;
+				float : left;
+			}
+			.box2{
+				width:200px;
+				height:200px;
+				background-color: yellow;
+				/*
+				 * 由于box1浮动的影响,box2整体向上移动了100px
+				 * clear 属性规定元素的哪一侧不允许其他浮动元素。/清除其他浮动元素对当前元素的影响
+						left 在左侧不允许浮动元素。 
+						right 在右侧不允许浮动元素。 
+						both 在左右两侧均不允许浮动元素。 /清除对当前元素影响最大的元素的浮动
+						none 默认值。允许浮动元素出现在两侧 
+				 */
+				clear:both;
+			}
+			.box3{
+				width:300px;
+				height:300px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"> </div>
+		<div class="box2"> </div>
+		<div class="box3"> </div>
+	</body>
+</html>

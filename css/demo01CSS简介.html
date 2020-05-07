@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8"/>
+		<title>demo1</title>
+		<!--内部样式
+			将CSS样式编写到 head 中的 style 标签里 
+				type = "text/css" 为默认值
+				将样式表编写的style标签中,然后通过CSS选择器选中指定元素
+				然后可以同时为这些元素一起设置样式
+				将样式表编写到style标签中,也可以使表现和结构进一步分离,推荐使用方式
+		-->
+		<style type = "text/css">
+			p{
+				color:red; 
+				font-size:20px;
+			 }		/* 为所有p元素设置样式 */
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		<h1>CSS简介</h1>
+		<p>层叠样式表(Cascading Style Sheets)</p>
+		<p>CSS可以用来为网页创建样式表可以对网页进行装饰</p>
+		<p>所谓层叠,可以将整个网页想象成是一层一层的结构,层次高的将会覆盖层次低的</p>
+		<p>而CSS就可以分别为网页的各个层次设置样式</p>
+		
+		
+		<!--内联样式
+			可以将 CSS 样式编写到元素 style 属性当中
+				将样式直接编写到 style 属性中,称为 内联样式
+				内联样式只对当前的元素中的内容起作用,内联样式不方便重复使用				
+				内联样式属于结构与表现耦合,不方便维护,不推荐使用
+			例子:<p style = "color:red; font-size:40px;">啦啦啦,哈哈哈</p>
+		-->
+		
+	</body>
+<html>

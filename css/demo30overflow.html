@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo30</title>
+		<style type="text/css">
+			.box1{
+				width:200px;
+				height:200px;
+				background-color: #bfa;
+			}
+			/*
+			 * 子元素默认是存在于父元素的内容区的
+			 * 超过父元素的内容我们称为溢出的内容
+			 * 
+			 * 父元素默认将我们溢出内容在父元素外边显示
+			 * 通过overflow设置溢出的内容
+			 * 		visible 默认值。内容不会被修剪，会呈现在元素框之外。 
+					hidden 内容会被修剪，并且其余内容是不可见的。 
+					scroll 内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。 
+							不管溢不溢出添加横竖滚动条
+					auto 如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。 
+
+			 */
+			.box2{
+				width:100px;
+				height:500px;
+				background-color: red;
+				
+				overflow:auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="box1">
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

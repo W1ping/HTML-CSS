@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo45表单项</title>
+	</head>
+	<body>
+			<!--
+			表单的作用就是用来将用户的信息提交给服务器的
+				 	比如百度的搜索框	注册	登录...等等
+		-->
+		
+		<!--
+			使用 form 标签来创建一个标签
+				form 标签中必须指定一个 action 属性，该属性指向的是一个服务器地址
+				当我们提交表单时将会提交到 action 属性对应的地址
+		-->
+		<form action="demo44target.html">
+			
+			<!--
+				在 HTML 中还为我们提供了一个标签,专门用来选中表单中的提示文字的
+					label 标签
+					该标签可以指定一个 for 属性该属性值需要指定一个表单项的 id 值
+			-->
+			<label for="um">用户名</label>
+			<input id="um" type="text" name="username" />
+			<br /><br />
+			<!--用户名<input type="text" name="username" vlaue="啊鬼"/><br /><br />-->
+			密码 <input type="password" name="password" /><br />
+			<!--
+				单选按钮
+					使用 input 来创建一个单选按钮 type 属性使用 radio
+					通过 name 属性分组, name 属性相同得为一组
+					像这种需要用户选择但是不需要用户直接填写内容的表单项
+					还必需指定一个 value 这样被选中的value 属性值会最终提交给服务器
+					
+				
+				如果想指定默认选择属性可以使用  checked="checked"
+			-->
+			性别<input type="radio" name="gender" value="male" />鬼
+				<input type="radio" name="gender" value="female" checked="checked"/>怪
+				<br /><br />
+				
+			<!--
+				多选按钮
+					使用 input 来创建一个单选按钮 type 属性使用 checkbox
+					通过 name 属性分组, name 属性相同得为一组
+					像这种需要用户选择但是不需要用户直接填写内容的表单项
+					还必需指定一个 value 这样被选中的value 属性值会最终提交给服务器
+			-->
+			爱好<input type="checkbox" name="hobby" value="1" />炒如
+				<input type="checkbox" name="hobby" value="2" />炒局
+				<input type="checkbox" name="hobby" value="3" />炒散
+				<input type="checkbox" name="hobby" value="4" />炒来炒去
+			<br /><br />	
+			
+			<!--
+				下拉列表
+					使用 select 来创建一个下拉列表
+						在下拉列表中用 option 标签来创建一个一个的列表项
+						在下拉列表中 name 属性指定给 select 而 value 属性需要指定给 option
+						
+					可以	通过在 option 中添加 selected="selected"  来设置默认选项
+					当为 select 添加一个 multiple="multiple" ,则下拉列表变成为一个多选的下拉列表
+				
+			-->
+			你喜欢的明星
+				<select name="star" >
+					<!--
+						在 select 中可以使用 optgroup 对选项进行分组
+							同一个 optgroup 中的是一组
+							可以通过 label 属性指定分组的名字
+					-->
+					
+					<optgroup label="啊鬼">
+						<option value="gag" selected="selected">鬼啊鬼</option>
+						<option value="aga">啊鬼啊</option>	
+					</optgroup>
+					
+					<optgroup label="炒如">
+						<option value="ag">啊鬼</option>
+						<option value="ga">鬼啊</option>
+						<option value="ag">啊鬼</option>
+						<option value="ga">鬼啊</option>
+						<option value="ag">啊鬼</option>
+						<option value="ga">鬼啊</option>
+						<option value="ag">啊鬼</option>
+						<option value="ga">鬼啊</option>
+					</optgroup>		
+				</select>
+				<br /><br />
+			<!--
+				使用 textarea 创建一个多行文本框(文本域)
+			-->
+			自我介绍<textarea name="info">
+				
+					</textarea>
+			
+				<br /><br />
+			
+			<!--
+				在表单中可以使用 fieldset 来为表单项进行分组
+				可以讲表单项中的同一组放到 fieldset 中
+				在 fieldset 可以使用  legend 子标签,来指定组名
+			-->
+			<fieldset>
+				<legend>用户信息</legend>
+				<label for="um">用户名</label>
+				<input id="um" type="text" name="username" /><br />
+				密码 <input type="password" name="password" />
+				
+			</fieldset>
+			<!--提交按钮-->
+			<input type = "submit" />
+			<!--重置按钮-->
+			<input type="reset" />
+			<!--
+				单纯的按钮
+					没有任何功能只能被点击与 js 绑定
+			-->
+			<input type="button" value="按钮"/>
+			
+			<!-- 
+				除了 input 也可以使用 button 标签来创建按钮
+				推荐使用更加灵活
+			-->
+			<br /><br />
+			<button type="submit">提交</button>
+			<button type="reset">重置</button>
+			<button type="button">按钮</button>
+		</form>
+	</body>
+</html>

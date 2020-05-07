@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo8</title>
+		<style type = "text/css">
+		/*
+		 * 使用伪元素来表示元素中的一些特殊的位置
+		 * 首字符   			:first-letter
+		 * 首行       			:first-line
+		 * 段落最前边		:before
+		 * 段落最后边		:after
+		 */
+		
+		/*/*
+		 * 为 p 中第一个字符来设置一个特殊的样式
+		 
+		p:first-letter{
+			color: red;
+			font-size: 30px;
+			}
+			
+		/*
+		 * 为 第一行设置一个背景颜色
+		 
+		p:first-line{
+			background-color:yellow ;
+			}*/
+			
+		/*
+		 *   :before 表示元素最前邊的部分,默认沒有任何東西
+		 * 	一般before都需要結合content樣式一起使用
+		 * 通過content可以向before或after的位置添加一些内容
+		 * content 的内容无法选中
+		 */
+		p:before{
+			content : "我是content ,我會出現在整個段落的最前边";
+			color:red;
+		}
+		
+		
+		p:after{
+			content : "我是content ,我會出現在整個段落的最后边";
+			color:yellowgreen;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<p>
+			我是一个 p 标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签
+			签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签
+			签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签
+			签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签
+			签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签标签
+		</p>
+	
+	</body>
+</html>

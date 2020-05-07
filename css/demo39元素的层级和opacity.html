@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo38固定定位</title>
+		<style type="text/css">
+			/*
+			 * 如果定位元素的层级是一样的则下边的元素会盖住上边的
+			 * 可以使用 z-index 属性来设置元素的层级/ z 轴
+			 * 可以为 z-index 指定一个正整数作为值,该值作为当前元素的层级
+			 *  层级越高,越优先显示
+			 * 
+			 * 对于没有开启定位(比如:static)的元素不能使用 z-index
+			 */
+			/*
+			 * 设置元素的透明背景
+			 * opacity 可以用来设置元素背景的透明
+			 * 它需要一个 0 -1 之间的值
+			 * 	0 	: 表示完全透明
+			 * 	1 	: 表示完全不透明
+			 * 	0.5 : 表示半透明
+			 * 
+			 * opacity 属性在 IE8 一下的浏览器不支持
+			 * IE8 及以下的属性代替
+			 *  alpha(opacity=透明度)  透明度在 0-100 之间的值
+			 * filter : alpha(opacity = 50);
+			 */
+			.box1{
+				width:200px;
+				height:200px;
+				background-color: #bfa;	
+				
+				position : relative;
+				z-index: 20;
+			}
+			
+			.box2{
+				width:200px;
+				height:200px;
+				background-color: red;
+				
+				/*开启绝对定位*/
+				position :absolute;
+				/*设置偏移量*/
+				left : 100px;
+				top : 100px;
+				z-index: 25;
+				
+			}
+			.box3{
+				width:200px;
+				height:200px;
+				background-color:blue ;
+				
+				position : absolute;
+				top : 200px;
+				left : 200px;
+				z-index : 30;
+				opacity : 0.5;
+				/*filter : alpha(opacity = 50);*/
+			}
+			
+			.box4{
+				width:200px;
+				height: 200px;
+				background-color: orange;
+				/*开启相对定位*/
+				position : relative;
+				
+				/*
+				 * 父元素的层级再高也不会盖住子元素
+				 */
+				z-index: 20;
+			}
+			.box5{
+				width:100px;
+				height: 100px;
+				background-color: skyblue;
+				/*开启绝对定位*/
+				position : absolute;
+				
+				z-index: 10;
+			}
+			/*span{
+				width:200px;
+				height:200px;
+				background-color: yellow;
+				
+				position: absolute;
+				
+			}*/
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+		<div class="box4">
+			box4
+			<div class="box5">box5</div>
+		</div>
+	</body>
+</html>

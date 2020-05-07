@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo28</title>
+		<style type="text/css">
+			span{
+				background-color:red ;
+			}
+			
+			.box1{
+				width:100px;
+				height: 100px;
+				background-color: blue;
+			}
+			
+			.s1{
+				/*
+				 * 内容区	
+				 * 	内联元素不能设置 width 和 height
+				 */
+				/*width:100px;
+				height: 100px;*/
+				
+				/*
+				 * 内边距
+				 * 	内联元素可以设置水平方向的内边距
+				 * 	内联元素可以设置垂直方向的内边距,但是不会影响页面的布局
+				 */
+				/*padding-left:100px;
+				padding-right: 100px;
+				padding-top: 50px;
+				padding-bottom: 50px;*/
+				
+				/*
+				 * 边框
+				 * 	内联元素可以设置边框
+				 * 	垂直的不会影响布局
+				 */
+				border: 10px yellow solid;
+				
+				/*
+				 * 外边距
+				 * 	内联元素水平方向相邻的外边距不会重叠,会求和
+				 * 	内联元素可以设置垂直方向的外边距
+				 */
+				margin-left:100px;
+				margin-right: 100px;
+				margin-bottom: 100px;
+				margin-top: 100px;
+				background-color: #baf;
+			}
+			
+			.s2{
+				margin-left:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<span class="s1">	s1 span 标签</span>
+		<span class="s2"> span 标签</span>
+		<span> span 标签</span>
+		<span> span 标签</span>
+		<span> span 标签</span>
+		<span> span 标签</span>
+		<span> span 标签</span>
+		
+		
+		<div class="box1"></div>
+	</body>
+</html>

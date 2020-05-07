@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type = "text/css">
+		/*
+		 * 否定伪类:
+		 * 	作用: 可以从已经选中的元素中删除出某些元素
+		 * 	语法:
+		 * 			:not(选择器)
+		 * 
+		 * 为所有 p 标签设置一个背景颜色除了 class 值为 p1 的
+		 * 
+		 */
+		p:not(#a1){
+			color:red;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<p> p 标签</p>
+		<p id="a1"> p 标签</p>
+		<p class = "p1""> p 标签</p>
+		<p> p 标签</p>
+		<p> p 标签</p>
+	</body>
+</html>

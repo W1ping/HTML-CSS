@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo24</title>
+		<style type="text/css">
+			/*
+			 * 盒子模型/框模型/box model
+			 * CSS 框模型 (Box Model) 规定了元素框处理元素内容、内边距、边框 和 外边距 的方式。
+			 *	content 	内容区
+			 * 	padding 	内边距
+			 * 	border      边框
+			 * 	margin      外边距
+			 */
+			.box1{
+				/*
+				 * 使用 width 设置盒子 内容区  的宽度
+				 * 使用 height 设置盒子 内容区 的高度
+				 * 盒子默认是透明的
+				 * 
+				 * 要为一个元素设置边框必须指定三个样式/缺一不可
+				 * 		border-width : 边框的宽度
+				 * 			
+				 * 		border-color : 边框的颜色
+				 * 		border-style : 边框的样式
+				 * 			none 		定义无边框。 
+							hidden 		与 "none" 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。 
+							dotted 		定义点状边框。在大多数浏览器中呈现为实线。 
+							dashed 		定义虚线。在大多数浏览器中呈现为实线。 
+							solid 		定义实线。 
+							double 		定义双线。双线的宽度等于 border-width 的值。 
+							groove 		定义 3D 凹槽边框。其效果取决于 border-color 的值。 
+							ridge 		定义 3D 垄状边框。其效果取决于 border-color 的值。 
+							inset 		定义 3D inset 边框。其效果取决于 border-color 的值。 
+							outset 		定义 3D outset 边框。其效果取决于 border-color 的值。 
+					
+					适用于所有样式  width,color,style
+							可以分别给四个边框指定宽度
+				 * 			如果在border-width/color/style/... 指定了四个值
+				 * 			则四个值会分别设置给  上  右  下  左  按照顺时针方向
+				 * 			例子 :  border-width: 10px 20px 30px 40px
+				 * 			如果指定三个值则会分别设置给	上  左右  下
+				 * 			如果设置两个值则分别设置给	上下    左右
+				 * 			如果设置一个值则  四边都是这个值
+				 * 除了 border-width,CSS中还提供了四个	border-xxx-width/color/style/....
+				 * 		xxx 的值可以是 top  right  bottom  left  
+				 * 		专门用来设置指定边的宽度
+				 * 
+				 * 
+				 * 盒子的大小由  内容区 ,内边距,边框共同决定
+				 */
+				
+				width: 300px;
+				height: 300px;
+				background-color: yellow ;
+				
+				
+				border-width: 10px ;
+				border-color: black;
+				border-style: ridge ;
+			}
+			
+			/*
+			 * 边框的简写属性
+			 */
+			.box2{
+				width: 300px;
+				height: 300px;
+				background-color: red;
+				
+				/*
+				 * 大部分的浏览器中,边框的宽度和颜色都是有默认值
+				 * 而边框的样式默认值都是 none 
+				 */
+				/*border-width: 3px ;
+				border-color: black;
+				border-style: dotted ;*/
+				/*
+				 * border 
+				 * 	- 边框的简写样式,可以同时设置宽度,颜色,样式
+				 * 	- 没有任何顺序要求
+				 * 	- border 一指定就是同时指定四条边不能分别指定
+				 * 
+				 * 	border-xxx  
+				 * 	top , right bottom , left, 只对一条边生效
+				 */
+				border: blue solid 5px;
+			}
+		</style>
+				
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</body>
+</html>

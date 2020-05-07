@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo28</title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color:#baf;
+				
+				/*
+				 * 为box1设置一个下外边距
+				 */
+				margin-bottom: 100px;
+			}
+			
+			/*
+			 * 垂直外边距的重叠:指  相邻的  垂直方向的  外边距会取最大值而不是取和
+			 * 	- 在网页中迟滞方向的相邻外边距会发生外边距的重叠
+			 * 		
+			 */
+			
+			.box2{
+				width: 200px;
+				height: 200px;
+				background-color:red;
+				
+				margin-top:100px;
+			}
+			
+			
+			
+			.box3{
+				width: 200px;
+				height: 200px;
+				background-color:#bfa;
+			}
+			
+			.box4{
+				width: 100px;
+				height: 100px;
+				background-color:yellow;
+				
+				/*
+				 * 为子元素设置一个外边距使子元素往下移
+				 * 如果父子元素的垂直外边距相邻了,则子元素的外边距会设置给父元素
+				 */
+				margin-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box3">
+			
+			<div class="box4">
+				
+			</div>
+		</div>
+		<div class="box1">
+			box1
+		</div>
+		<div class="box2">
+			box2
+		</div>
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo40背景</title>
+		<style type = "text/css">
+			.box1{
+				width : 2000px;
+				height : 5000px;
+				/*background: #bfa;*/
+				/* 居中 */
+				margin : 0 auto;
+				/*
+				 * 使用 background-image 来设置背景图片
+				 *		 url('URL') 指向图像的路径。 
+				 *		 none 默认值。不显示背景图像。
+				 *  - 如果背景图片大于元素大小 ,默认会显示图片的左上角
+				 *  - 如果背景图片跟元素一样大,则会讲背景图片全部显示
+				 *  - 如果背景图片小于元素大小,则会默认讲背景图片 平铺/重复 以充满元素
+				 *  - 可以同时为一个元素设置背景颜色和背景图片,则背景颜色会做为一个底色
+				 * 		一般设置背景图片会同时指定一个背景颜色
+				 * 
+				 * background-repeat 属性设置是否及如何重复背景图像
+				 * 		repeat 默认。背景图像将在垂直方向和水平方向重复。 
+				 *		repeat-x 背景图像将在水平方向重复。 
+				 *		repeat-y 背景图像将在垂直方向重复。 
+				 *		no-repeat 背景图像将仅显示一次。 
+				 *
+				 * 
+				 */
+				/*background-image : url(../img/00.jpg);
+				background-repeat: repeat-y;*/
+				
+				
+				/*
+				 * 		背景图片默认贴着左上角显示
+				 * 	background-position 	属性设置背景图像的起始位置
+				 * 	
+				 *  可能的值   	默认值： 0% 0%   如果仅规定了一个关键词，那么第二个值将是"center"。
+				 * 		top left 
+				 *		top center 
+				 *		top right 
+				 *		center left 
+				 *		center center 
+				 *		center right 
+				 *		bottom left 
+				 *		bottom center 
+				 *		bottom right 
+				 * 
+				 * 		x% y% 第一个值是水平位置，第二个值是垂直位置。
+				 *		左上角是 0% 0%。右下角是 100% 100%。
+				 *		如果您仅规定了一个值，另一个值将是 50%。
+				 * 		xpx  ypx 第一个值是水平向右，第二个值是垂直向下
+				 * 	    x  y 可以指定负值往反方向
+				 *  
+				 */
+				background-image : url(../img/Coldplay01.jpg);
+				background-repeat: no-repeat;
+				background-position : 10% 10%;
+			}
+			
+			/*
+			 * background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动。
+			 * 
+			 * 		scroll 	默认值。背景图像会随着页面其余部分的滚动而移动。 
+			 * 		fixed 	当页面的其余部分滚动时，背景图像不会移动。  
+			 * 			当设置 fixed 后背景图片的定位永远相对于浏览器的窗口
+			 */
+			body{
+				background-image : url(../img/Coldplay01.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+			
+			/*
+			 * 	简写属性: 同时设置 所有 背景相关的样式(空格隔开)没有任何顺序要求
+			 * 			  不设置的值使用默认值
+			 * 		background : xxx xxx xxx xxx xxx ....;
+			 */
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+	</body>
+</html>

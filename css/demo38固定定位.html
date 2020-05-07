@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo38固定定位</title>
+		<style type="text/css">
+			/*
+			 * position 属性规定元素的定位类型。
+			 * 	任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。
+			 *  相对定位元素会相对于它在正常流中的默认位置偏移。
+			 *	可选值:
+			 * 	static 		默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 的声明)
+			 * 	relative 	生成相对 定位的元素，相对于其正常位置进行定位。
+			 *	fixed 		生成 绝对/固定 定位的元素，相对于浏览器窗口进行定位
+	 		 *	absolute 	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+	 		 * 
+	 		 *  当开启了元素的定位(position属性值是一个非 static )时
+	 		 * 可以通过 left right top bottom 四个属性来设置元素的偏移量
+	 		 *  left : 		元素相对于其他定位的  左侧 的偏移量
+	 		 *  right : 	元素相对于其他定位的  右侧 的偏移量
+	 		 *  top : 		元素相对于其他定位的  上边 的偏移量
+	 		 *  bottom : 	元素相对于其他定位的  下边 的偏移量
+ 		 	 */
+ 		 	
+ 		 	/*
+ 		 	 * 固定定位:固定定位也是一种绝对定位,大部分特点和绝对定位一样
+ 		 	 * 不同点:
+	 		 *    	1.固定定位永远相对于浏览器窗口进行定位
+	 		 * 		2.固定定位会固定在窗口得某个位置,不会随滚动条滚动
+	 		 * 
+	 		 * IE6不支持固定定位
+ 		 	 */
+			.box1{
+				width:200px;
+				height:200px;
+				background-color: #bfa;	
+			}
+			
+			.box2{
+				width:200px;
+				height:200px;
+				background-color: red;
+				
+				position : fixed;
+				left  : 0px;
+				right : 0px;
+			}
+			.box3{
+				width:200px;
+				height:200px;
+				background-color:blue ;
+			}
+			
+			.box4{
+				width:300px;
+				height: 300px;
+				background-color: orange;
+				
+				position : relative;
+			}
+			
+			span{
+				width:200px;
+				height:200px;
+				background-color: yellow;
+				
+				position: absolute;
+				
+			}
+			
+		</style>
+	</head>
+	<body style="height : 5000px;">
+		<div class="box1">box1</div>
+		<div class="box4">
+			box4
+			<div class="box2">box2</div>
+		</div>
+		
+		<div class="box3">box3</div>
+		<span>span标签</span>
+	</body>
+</html>

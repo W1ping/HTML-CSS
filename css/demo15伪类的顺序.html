@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo15</title>
+		<style type="text/css">
+			/*
+			 * 伪类
+			 * 	:link
+			 * 	:visited
+			 * 	:hover
+			 * 	:active
+			 * 	这四个选择器的优先级是一样的
+			 * 	但是按照前面的顺序才不会冲突
+			 *  l v h a
+			 */
+		
+			a:link{
+				color:yellowgreen;
+			}
+			
+			a:visited{
+				color:red;
+			}
+			
+			a:hover{
+				color:rosybrown;
+			}
+			
+			a:active{
+				color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<a href = "http://www.baidu.com">访问过的链接</a>
+		<br /><br />
+		<a href = "http://www.baidu1234.com">未问过的链接</a>
+	</body>
+</html>

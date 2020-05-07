@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo44表单简介</title>
+	</head>
+	<body>
+		<!--
+			表单的作用就是用来将用户的信息提交给服务器的
+				 	比如百度的搜索框	注册	登录...等等
+		-->
+		
+		<!--
+			使用 form 标签来创建一个标签
+				form 标签中必须指定一个 action 属性，该属性指向的是一个服务器地址
+				当我们提交表单时将会提交到 action 属性对应的地址
+		-->
+		<form action="demo44target.html">
+			<!--
+				使用 form 创建的仅仅是一个空白的表单
+				需要向 form 中添加不同的表单项
+				
+				使用 input 来创建一个文本框 , 它的 type 属性是 text
+					如果希望表单的数据提交到服务器中,还需要给表单指定一个 name 属性
+					name 表示提交内容的名字
+					
+				用户填写的信息附在 url 地址的后边以查询字符串的形式发送给服务器
+					url地址?查询字符串
+				格式 : 
+					属性名 = 属性值&属性名 = 属性值&属性名 = 属性值&属性名 = 属性值....
+					
+				在文本框(input)中也可以指定 value 属性值,该值会作为文本框的默认值(不是提示文字)
+			-->
+			用户名<input type="text" name="username" value = "我是value"/><br /><br />
+			
+			
+			<!--
+				密码框
+					使用 input 创建一个密码框它的type值为password
+			-->
+			密码<input type="password" name="password" /><br />
+			<!--用户名<input type="text" name="hello" />-->
+			<!-- 
+				使用 input 创建一个提交按钮,它的 type 属性值是 submit 
+				在提交按钮中可以通过 value 属性来指定按钮上的文字
+			-->
+			<input type = "submit" value="修改" />
+		</form>
+	</body>
+</html>

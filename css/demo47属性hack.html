@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo47属性hack</title>
+		<style type="text/css">
+			body{
+				background-color:#bfa ;
+				/*
+				 * 假设在 IE6 中需要将背景颜色设置为黄色
+				 *  语法 ： 选择器
+				 * 		_  ： 选择 IE6 及以下
+				 * 		*  ： 选择 IE7 及以下
+				 *		\9 : 选择 IE6 及以上
+				 * 		\0 : 选择IE8+和 Opera15以下的浏览器
+				 */
+				_background-color:yellow ;
+				background-color:blue\0 ;
+				
+			}
+		</style>			
+	</head>
+	<body>
+	</body>
+</html>

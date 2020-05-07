@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo21</title>
+		<style type="text/css">
+		/*
+		 * 使用 color 来设置文字的颜色 前景色
+		 *  font-size 来设置文字大小 默认大小为 16 px
+		 * 		不是设置文字本身的大小,在页面中文字都是存在一个看不见的框中
+		 * 我们设置的font-size 实际上设置的是 格 的高度
+		 * 一般情况下文字都要比格小
+		 * 
+		 * 通过font-family 可以指定字体
+		 * 	当采用某种字体时,如果浏览器支持则使用该字体
+		 * 	如果不支持则使用默认字体
+		 * 该样式可以同时指定多个字体 使用 , 分开
+		 * 优先使用前面的字体
+		 */
+			/*.p1{
+				color: red;
+				font-size: 20px;
+				font-family: "small fonts";
+			}*/
+			/*
+			 * 	normal 	- 文本正常显示 
+			 *	italic 	- 文本斜体显示 
+			 *	oblique - 文本倾斜显示
+			 * 大部分浏览器都不会对 倾斜和斜体 不会做区分 italic  oblique效果一样
+			 * 使用font-style来设置文字的样式
+			 * 
+			 *  font-weight: 属性设置文本的粗细。
+			 * normal  		默认值。定义标准的字符。
+			 * bold    		定义粗体字符。
+			 * bolder    	定义更粗体字符。
+			 * lighter 		定义更细的字符。	
+			 * 100-900 		定义由粗到细的字符。400 等同于 normal，而 700 等同于 bold。
+			 */
+			
+			/*
+			 * font-variant 属性设置小型大写字母的字体显示文本(比大写字母的大小小一些)
+			 * normal 		默认值。浏览器会显示一个标准的字体。	
+			 * small-caps 	浏览器会显示小型大写字母的字体 
+			 * 
+			 */	
+			.p1{
+				color:yellow;
+				font-size : 30px;
+				font-family: "arial black";
+				font-style: oblique;
+				font-weight:bolder;
+				font-variant: small-caps;
+			}
+			
+			/*
+			 * 在CSS中提供了一个样式叫  font 可以同时设置字体相关的所有样式
+			 * 统一写在font样式中,不同的值之间使用空格隔开
+			 * 
+			 * 使用font设置字体样式时
+			 * 斜体  	加粗  大小写字母  没有顺序要求 	如果不写则使用默认值
+			 * 文字的大小和字体必须写		而且字体样式在最后  字体大小在倒数第二
+			 */
+			.p2{
+				font: italic small-caps bold 40px "华文彩云"
+			}
+			/*
+			 * 字体的分类(大分类)
+			 * serif 			衬线字体
+			 * sans-serif 		非衬线字体
+			 * monospace 		等宽字体
+			 * cursive 			草书字体
+			 * fantasy 			虚幻字体
+			 * 
+			 * 当设置为大分类后,浏览器会自动选中指定的字体并应用样式
+			 * 一般会将字体的大分类 指定为font-family中的 最后一个
+			 * 比如:font-family: "arial black 华文彩云 serif";
+			 */
+			.p3{
+				font-family: fantasy ;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p1">
+			p 标签 123 abcEFG
+		</p>
+		
+		<p class="p2">
+			啊鬼炒如 123 BAC abc
+		</p>
+		
+		<p class="p3">
+			啊鬼日日炒如 123 BAC abc
+		</p>
+	</body>
+</html>

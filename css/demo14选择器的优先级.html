@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo14</title>
+		<style type="text/css">
+			/*
+			 * 选择器的优先级/选择器的权重
+			 * 	当选择不同的选择器选中同一个元素时并且设置相同的样式时
+			 * 	优先级高的/权重高的优先显示
+			 * 	
+			 * 优先级的规则
+			 * 	-内联样式		优先级:1000
+			 * 	-id选择器		优先级:100
+			 * 	-类和伪类		优先级:10
+			 * 	-元素选择器		优先级:1
+			 * 	-通配  *选择器     	优先级:0
+			 * 	-继承的样式		没有优先级
+			 * 
+			 * 包含多种选择器时,需要将多种选择器的优先级相加然后比较
+			 * 	但是注意:选择器的优先级计算不会超过他的最大数量级
+			 * 	如果选择器的优先级相同则使用靠后的样式
+			 * 
+			 * 	并集选择器的优先级单独计算
+			 * 	div , p ,#id , .class{ }
+			 * 
+			 * 可以在样式的最后添加一个 !important ,则此时优先最高
+			 */
+			#d1{
+				background-color: yellow !important;
+			}
+		</style>
+	</head>
+	<body>
+		<p class = "p1 p2" id = "d1" style="background-color:red ;"> p 标签</p>
+	</body>
+</html>

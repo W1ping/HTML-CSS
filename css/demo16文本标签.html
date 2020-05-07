@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 *  <em>标签用于一段内容的着重点
+			 * 	<strong>标签用于表示一个内容的重要性
+			 * 这两个标签可以单独使用,也可以一起使用
+			 * 通常<em>显示为斜体	<strong>显示为粗体
+			 */
+			
+			/*
+			 * 	i 标签的内容会以斜体显示 	italic
+			 * 	b 标签的内容会以粗体显示	bold
+			 * 	都没有任何语义
+			 */
+			
+			/*
+			 * small 标签中的内容会比他的父亲元素中的文字要小些
+			 * 	在 h5 中使用small标签来表示一些细则一类的内容
+			 * 	比如 : 合同的小字,网站的版权声明都可以放到small中
+			 */
+			
+			/*
+			 * cite 标签表示参考的内容
+			 * 网页中所有的加书名号的内容都可以使用 cite 标签
+			 * 比如:书名,歌名,话剧名,电影名
+			 * /
+			 
+			 /*
+			  *  q 标签表示一个短引用(行内引用)
+			  *  q 标签引用的内容浏览器默认加上引号
+			  * 	默认不用,不同浏览器表现不一样
+			  * 
+			  * 	blockquote 标签表示一个常引用/块级引用
+			  * 	不能放 p 标签中
+			  * 	因为blockqute 是一个块元素不能用块包含块
+			  */
+			 
+			 /*
+			  * 	使用sup标签表示上标
+			  * 	使用sub标签表示下标
+			  */
+			 
+			 /*
+			  *  del 标签 	表示一个	删除	的内容 	添加删除线
+			  *  ins 标签 	表示一个	插入	的内容 	添加下划线 	
+			  */
+			 
+			 /*
+			  *  pre 是预格式标签
+			  * 	会将代码的格式保存,不会忽略多个空格
+			  * 
+			  *  code 专门用来表示代码
+			  * 
+			  * 一般回结合使用 和 来表示一段代码
+			  */
+		</style>
+		
+	</head>
+	<body>
+		<p>
+			<strong>这是一个strong标签</strong>
+			<em>这是一个em标签</em>
+		</p>
+		
+		<p>
+			<i>我是 i 标签</i>
+			<b>我是 b 标签</b>
+		</p>
+		
+		<p>
+			 p 标签
+			 <small>small标签</small>
+		</p>
+		
+		<p>
+			<cite>金瓶梅</cite> 一本书
+		</p>
+		
+		<p>
+			啊鬼:<q>硬爱炒如</q> 
+		</p>
+		
+		<div>
+			啊鬼:<blockquote>就是爱炒如</blockquote> 
+		</div>
+		
+		<p>
+			 2<sup>3</sup> <br />
+			 阿鬼<sup><a href="#">炒如</a></sup> <br />
+			 H<sub>2</sub>O
+		</p>
+		
+		<p>
+			<del>20</del>	<br />
+			啊鬼<ins>炒如</ins>
+		</p>
+		<!--
+		<pre>
+			#include<stdio.h>
+				{
+					printf("阿鬼炒如1");
+					return 0;
+				}
+		</pre>
+		
+		<code>
+			#include<stdio.h>
+				{
+					printf("阿鬼炒如2");
+					return 0;
+				}
+		</code>
+		-->
+		<pre>
+			<code>
+				#include<stdio.h>
+					{
+						printf("阿鬼炒如1");
+						return 0;
+					}
+			</code>
+		</pre>
+	</body>
+</html>

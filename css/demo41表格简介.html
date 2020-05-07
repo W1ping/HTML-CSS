@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo41表格简介</title>
+		<style type="text/css">
+			/*表格默认没有边框*/
+			table{
+				width : 20%;
+				/*border: 1px solid black;*/
+				margin : 50px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 用 table 标签来创建一个表格 -->
+		<table border="1">
+			<!--
+				在table标签中使用 tr(table row) 来表示表格中的一行
+			-->
+			<tr>
+				<!--
+					在 tr 中使用 td 来创建一个单元格
+				-->
+				<td>A1</td>
+				<td>A2</td>
+				<!-- rowspan 纵向合并单元格-->
+				<td rowspan="2">A3</td>
+			</tr>
+			<tr>
+				<!--
+					在 tr 中使用 td 来创建一个单元格
+				-->
+				<td>B1</td>
+				<td>B2</td>
+				<!--<td>B3</td>-->
+			</tr>
+			<tr>
+				<!--
+					在 tr 中使用 td 来创建一个单元格
+				-->
+				<td>C1</td>
+				<!--
+					conlspan 横向合并单元格
+					
+				-->
+				
+				<td colspan="2">C2</td>
+				
+				<!--<td>C3</td>-->
+			</tr>
+			
+		</table>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo11</title>
+		<style type="text/css">
+			/*
+			 * 后一个元素选择器
+			 * 为span后的一个p元素设置一个背景颜色
+			 * 	作用: 可以选中一个元素后紧挨着的指定的兄弟元素
+			 * 	语法: 前一个 + 后一个
+			 * 	
+			 * 两个之间不能有其他元素
+			 */
+			span + p{
+				background-color: red;
+			}
+			
+			/*
+			 * 选中后边的所有兄弟元素
+			 * 语法 :前一个 ~ 后边所有
+			 * 
+			 * 两个之间可以有其他元素
+			 */
+			
+			span ~ p{
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<p> p 标签</p>
+		<p> p 标签</p>
+		<span> span 标签</span>
+		<div> div 标签</div>
+		<p> p 标签</p>
+		<p> p 标签</p>
+		<p> p 标签</p>
+		<p> p 标签</p>
+		<p> p 标签</p>
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo17</title>
+		<style type = "text/css">
+			/*
+			 * 去掉项目符号
+			 */
+			
+			/*ul{
+				list-style: none;
+			}*/
+		</style>
+	</head>
+	<body>
+		<!--
+			列表相当于购物清单
+			-无序列表
+			-有序列表
+			-定义列表
+		-->
+		
+		<!--
+			无序列表
+				-使用 ul 标签来创建一个列表
+				-使用 li 在 ul中创建一个一个列表
+					一个 li 就是一个列表项
+			
+			通过type属性可以修改无序列表的符号(不推荐使用)
+				type = "disc"		默认值实星的圆点
+				type = "square"		实心的方块
+				type = "circle"		空心的圆
+				
+			注意: 默认的项目符号我们都不使用,直接使用 css 去掉
+				如果需要设置项目符号,则可以采用为 li 设置背景图片的方式来设置
+					确保不同浏览器样式的统一
+		-->
+		<ul type = "circle">
+			<li>啊鬼</li>
+			<li>灵灵</li>
+			<li>炒如</li>
+		</ul>
+		
+		<!--
+			有序列表和无序列表类似使用 ol 来代替 ul
+				使用有序的序号作为项目符号
+			type = "1"		默认值,使用阿拉伯数字
+			type = "a"		使用小写字母
+			type = "A"		使用大写字母
+			type = "i"		使用罗马数字
+			type = "I"		使用大罗马数字
+			
+			ol 也是一个块元素
+		-->
+		<ol type = "i">
+			<li>啊鬼</li>
+			<li>灵灵</li>
+			<li>炒如</li>
+			<li>炒如</li>
+			<li>炒如</li>
+			<li>炒如</li>
+			<li>炒如</li>
+		</ol>
+		
+		
+		<!--
+			列表之间可以互相嵌套
+		-->
+		<ul type = "circle">
+			<li>
+				啊鬼
+				<ol>
+					<li>炒</li>
+					<li>如</li>
+				</ol>
+			</li>
+			<li>灵灵</li>
+			<li>炒如</li>
+		</ul>
+	</body>
+</html>
