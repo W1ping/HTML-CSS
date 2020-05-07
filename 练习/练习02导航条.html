@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>练习02导航条</title>
+		<style type = "text/css">
+			/* 清除默认样式*/
+			*{
+				margin : 0;
+				padding : 0;
+			}
+			/*	*/
+			.ul1{	
+				/*去除默认的圆点*/
+				list-style:none;
+				
+				/* 宽度背景颜色 */
+					/*
+					 * 在  IE6  中如果为元素指定一个宽度,则默认开启 hasLayout
+					 */
+				width:1000px;
+				background-color: cornflowerblue;
+				
+				/* 设置居中并往下挪50个像素点 */
+				margin: 50px auto;
+				
+				/* 解决高度塌陷 否则一设置浮动会使高度塌陷无法显示背景颜色*/
+				overflow: hidden;
+				
+			}
+			
+			.ul1 li{
+				/* 使字体横向排序 */
+				float : left;
+				
+				/* 设置宽度为父元素  ul 的 25%  */
+				width: 25%;
+			}
+			
+			.ul1 li a{
+				/*
+				 *  超链接为内联元素不能设置宽度*
+				 *  将超链接转换为块元素
+				 */
+				display:block;
+				
+				/* 设置宽度为父元素   li  的100%   相当于 ul 宽度的 25%   */
+				width : 100%;
+				
+				/* 设置文字居中 */
+				text-align: center;
+				
+				/* 上下边距设置为 5 像素点  左右为 0*/
+				padding : 5px 0;
+				
+				/* 去除下划线 */
+				text-decoration : none;
+				
+				color : whitesmoke;
+				font-weight: bolder;
+			}
+			
+			/*
+			 * 设置鼠标移入效果
+			 * 如果只设置 color 则只改变字体颜色不能改变整个块的颜色
+			 */
+			.ul1 a:hover{
+				background-color:palevioletred;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<ul class = "ul1">
+			<li><a href = "#">首页</a></li>
+			<li><a href = "#">新闻</a></li>
+			<li><a href = "http://127.0.0.1:8020/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE/%E7%BB%83%E4%B9%A0/%E7%BB%83%E4%B9%A003%E5%BC%80%E7%8F%AD%E4%BF%A1%E6%81%AF.html">联系我们</a></li>
+			<li><a href = "http://127.0.0.1:8020/%E5%B0%9A%E7%A1%85%E8%B0%B7%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE/%E7%BB%83%E4%B9%A0/%E7%BB%83%E4%B9%A001%E8%95%BE%E5%93%88%E5%A8%9C.html">关于</a></li>
+		</ul>
+	</body>
+</html>

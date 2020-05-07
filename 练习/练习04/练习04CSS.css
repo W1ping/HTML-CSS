@@ -1,0 +1,97 @@
+		/*清除默认样式*/
+		*{
+			margin :0;
+			padding : 0;
+		}
+		.total{
+			width:  775px;
+			/*height : 122px;*/
+			/*background-color: #bfa;*/
+			/*居中显示*/
+			margin: 50px auto;
+		}
+		
+		.head{
+			font-size: 24px;
+			/* 设置标题文字居中 */
+			text-align: center;
+			margin : 0px 0px 10px 0px;
+		}
+		/* 标题栏无序列表*/
+		ul.ul-title{
+			/*清除样式*/
+			list-style: none;
+			width : 100%;
+		}
+		/* 标题栏得 li*/
+		ul.ul-title li{
+			/* 让字体水平排列 */
+			float : left;
+			
+			border-top : 3px rgb(94,45,0) solid;
+			border-bottom : 3px rgb(94,45,0) solid;
+			margin : 0px 0px 12px 0px;
+		}
+		
+		/* 标题栏的超链接 */
+		ul a{
+			/* 超链接为内联元素不能设置宽度*将超链接转换为块元素*/
+			display:block;
+			/*字体大小*/
+			font-size : 22px;
+			/*设置字体颜色*/
+			color:rgb(94,45,0);
+			/* 去除下划线 */
+			text-decoration: none;
+		
+			margin : 12px ;
+			
+		}
+		
+		/* 鼠标悬停 */
+		a:hover{
+			color:red;
+			text-decoration : underline;
+		}
+		
+		
+	
+		.content{
+			/*width : 775px;*/
+			float:none;
+			/*background-color: #bfa;*/
+			margin: 17px 50px 10px 41px;
+			
+		}
+		
+		
+
+
+		ul.ul-content{
+			list-style: none;
+			
+		}
+		
+		
+		p{
+			
+			float:left;
+			font-size:20px;
+			margin : 10px auto;
+		}
+		
+		img.left{
+			
+			float:left;
+			margin : 12px ;
+		}
+		
+		.red{
+			color:red;
+		}
+		.brown{
+			color:rgb(189,167,147);
+		}
+		.browner{
+			color:rgb(94,45,0);
+		}

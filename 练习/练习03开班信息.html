@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>开班信息</title>
+		<style type = "text/css">
+			/*清除默认样式*/
+			*{
+				margin : 0;
+				padding : 0;
+			}
+			/*统一页面中的字体*/
+			body{
+				font : 12px/1 微软雅黑;
+			}
+			
+			/* 整体块元素*/
+			.total{
+				width: 300px;
+				/*不设置高度,让内容撑开*/
+				/*height : 473px;
+				background-color: #bfa;*/
+				
+				/* 居中显示 */
+				margin : 50px auto;
+				
+				
+			}
+			
+			/* 标题栏*/
+			.title{
+				line-height: 36px;
+				background-color: #f5f5f5;
+				/* 设置上边框*/
+				border-top: 2px #019e8b solid;
+				/* 设置内边距,使两边文字分别往里挤挤 */
+				padding : 0 22px 0 16px;
+			}
+			
+			.title h3{
+				float:left;
+				/* 设置字体大小*/
+				font: 16px/36px "微软雅黑";
+				/*设置正常字体不加粗*/
+				font-weight:normal;
+			}
+			 
+			.title a{
+				color: red;
+				float : right;
+			}
+			/* 解决高度塌陷问题*/
+			.title:after{
+				content: "";
+				display:block;
+				clear:both;
+			}
+			
+			
+			/* 主要内容区 */
+			.content{
+				border: 1px solid #C0C0C0;
+				/* 设置内边距,使两边内容往内挤*/
+				padding: 0 20px 0 24px;
+			}
+			
+			.content ul{
+				/* 去除项目符号 */
+				list-style:none;
+				/* 设置每个小内容区底部的虚线条*/
+				border-bottom: dashed 1px #C0C0C0;
+			}
+			/*去除最后一个 ul 的边框*/
+			.content .no-border{
+				border : none;
+			}
+			/*设置内容中的 li */
+			.content li{
+				padding : 10px;
+			}
+			
+			.content a{
+				color : black;
+				/* 去除超链接下划线 */
+				text-decoration: none; 
+				
+				/* 设置字体大小*/
+				font-size : 12px;
+			}
+			.content a:hover{
+				color:red;
+				text-decoration: underline;
+			}
+			
+			/* 使class = right 的超链接向左浮动*/
+			.content .right{
+					float : right;
+			}
+			
+			.content .red{	
+				color:red;	
+			}
+			/* 设置3个标题的格式 */
+			.content h3{
+				/* 设置 3个 标题离无序列表的距离*/
+				padding-top: 10px;
+				padding-bottom : 10px;
+				
+			}
+			
+			.content .purple{
+				color:rgb(125,34,100);
+			}
+		</style>
+	</haed>
+	
+	<body>
+		<!--  一个外层 div 容纳整个内容-->
+		<div class="total">
+			
+			<!--  开班信息头部 -->
+			<div class="title">
+				<h3>近期开班</h3>
+				<a href="#">16年面授开班计划</a>
+			
+			</div>
+			
+			<!--  开班信息的主要内容-->
+			<div class="content">
+				<h3><a href = "#">JavaEE+云计算-全程就业班</a><h3>
+				<ul>
+					<li><a href = "#">开班时间 :<spna class = "red"> 2016-04-27</span></a>	
+						<a href = "#"class = "right" ><spna class = "red">预约报名</span></a>
+					</li>
+					<li><a href = "#">开班时间 : <spna class = "red">2016-04-07</span></a>	
+						<a href = "#" class = "right"><spna class = "red">无座,名额爆满</span></a>
+					</li>
+					<li><a href = "#">开班时间 : 2016-03-15</a>	
+						<a href = "#" class = "right" >开班盛况</a>
+					</li>
+					<li><a href = "#">开班时间 : 2016-02-25</a>	
+						<a href = "#" class = "right" >开班盛况</a>
+					</li>
+					<li><a href = "#">开班时间 : 2015-12-26</a>	
+						<a href = "#" class = "right" >开班盛况</a>
+					</li>
+				</ul>
+				
+				<h3><a href = "#">Android+人工智能-全程就业班</a><h3>
+				<ul>
+					<li><a href = "#">开班时间 :<spna class = "red"> 2016-04-10</span></a>	
+						<a href = "#"class = "right" ><spna class = "red">预约报名</span></a>
+					</li>
+					<li><a href = "#">开班时间 : 2016-03-17</a>	
+						<a href = "#" class = "right">开班盛况</a>
+					</li>
+					<li><a href = "#">开班时间 : 2016-02-20</a>	
+						<a href = "#" class = "right" >开班盛况</a>
+					</li>
+					<li><a href = "#">开班时间 : 2015-12-23</a>	
+						<a href = "#" class = "right" >开班盛况</a>
+					</li>
+
+				</ul>
+				
+				<h3><a href = "#"><span class = "purple">前端+HTML5-全程就业班</span></a><h3>
+				<ul class = "no-border">
+					<li><a href = "#">开班时间 :<spna class = "red"> 2016-05-10</span></a>	
+						<a href = "#"class = "right" ><spna class = "red">预约报名</span></a>
+					</li>
+					<li><a href = "#">开班时间 : 2016-03-16</a>	
+						<a href = "#" class = "right">开班盛况</a>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
